@@ -1,0 +1,62 @@
+<div id='ball' style='
+z-index: 5;
+position: absolute;
+left: 0px;
+top: 100px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: black'>;</div>
+
+<script>
+
+var ball = document.getElementById('ball')
+var velocity = 12;
+var positionX = 0;
+var positionY = 0;
+var reverseX = false;
+var reverseY = false;
+var Xmin = 0;
+var Xmax = 288;
+var Ymin = 0;
+var Ymax = 242;
+
+function moveBall() {
+   if (reverseX){
+    positionX = positionX - velocity;
+   }
+    if (reverseY){
+    positionY = positionY - velocity;
+   }
+   if (reverseX === false){
+    positionX = positionX + velocity;
+   }
+    if (reverseY === false){
+    positionY = positionY + velocity;
+   }
+
+   if (positionX >= Xmax) {
+    reverseX = true;
+    }
+    if (positionX <= Xmin) {
+    reverseX = false;
+    }
+
+
+   if (positionY >= Ymax) {
+    reverseY = true;
+   }
+   if (positionY <= Ymin) {
+    reverseY = false;
+    }
+  
+    ball.style.left = positionX + 'px'; 
+    ball.style.top = positionY + 'px';
+}
+
+   console.log(positionX);
+   console.log(positionY);
+
+    setInterval(moveBall,50)
+  
+</script>
