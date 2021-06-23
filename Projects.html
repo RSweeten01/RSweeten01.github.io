@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<!-- BootStrap stylesheet referance for Extra credit -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
-<!-- BootStrap stylesheet referance for Extra credit -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <style>
@@ -48,7 +46,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </style>
 <body class="w3-black">
 
- <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center myNavbar " >
       <!-- Avatar image in top left corner -->
       <img src="FatherSon.JPG" style="width:100%">
@@ -70,23 +68,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </a>
     </nav>
   
- <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
   </div>
 
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">MIT xPro</span> Projects</h1>
     <p>Pac-Man, Eyes Tracker, & Live Bus Tracker</p>
- <!-- <img src="Family.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
+    <!-- <img src="Family.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
   </header>
 
- <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Projects">
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Projects">
     <h2 class="w3-text-light-grey">My Projects</h2>
     <hr style="width:200px" class="w3-opacity">
 
@@ -96,32 +95,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <p>The Pac-Man project displays writing code to produce imgages of Pac-Man who move across the screen in random dicrestions 
              till they reach the boarders of the screen at which time they change their trajectory. </p>
         <img src="PacMan1.png" style="width:30%" >
-        <button class="w3-button w3-black w3-padding-small w3-section">
+        <button class="w3-button w3-padding-small w3-section">
         <a class="anchor" target="blank" href="https://github.com/RSweeten01/Pac-Man">PacMan</a>
         </button>
 
         <p>The Tracking Eyes project displays writing code to update a image to follow along with the mouse pointer.</p>
         <img src="eyes2.png" style="width:35%">
-        <button class="w3-button w3-black w3-padding-small w3-section">
-        <a class="anchor" target='blank' href="https://github.com/RSweeten01/Eyes">Eyes</a>
+        <button class="w3-button w3-padding-small w3-section">
+        <a class="anchor" target="blank" href="https://github.com/RSweeten01/Eyes">Eyes</a>
         </button>
 
         <p>The Live Bus Tracker displays writing code to pull data from public API's and render that data over a map as it updates from the 
            public API.</p>
         <img src="MetroBus.jpg" style="width:43%" >
-        <button class="w3-button w3-black w3-padding-small w3-section">
+        <button class="w3-button w3-padding-small w3-section">
         <a class="anchor" target="blank" href="https://github.com/RSweeten01/Bus-Tracker-Real-Time">MetroBus Tracker</a>
         </button>
         
       </div>
-    </div>
-   <!-- End Projects grid -->
+
       
         
-      
+      </div>
 
-   <!-- Contact Section -->
-   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
@@ -130,23 +128,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 832-703-6320</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Rsweeten01@gmail.com</p>
     </div><br>
-   </div>
-   <!-- End Contact Section -->
-  
-  
+   
 
+   
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
 
     <h2 class="mt-4"><p style="color:lightgrey">Social Media Links</p></h2>
     <hr style="width:300px" class="w3-opacity">
     <p>Attached are links to the best methods to reach out and find me</p>
     <div class="row mb-3">
-      <div class="col-md-4 themed-grid-col"><p><a class="anchor" target="_blank" href="https://github.com/RSweeten01" > <i style="font-size: 25px;" class="fab fa-github-square"></i> RSweeten01.  </a> </p></div>
-      <div class="col-md-4 themed-grid-col"><p><a class="anchor" target="_blank" href="https://www.linkedin.com/in/robert-sweeten-b68020b0/" > <i style="font-size: 25px;" class="fab fa-linkedin"></i> RSweeten01.  </a> </p></div>
+      <div class="col-md-4 themed-grid-col"><p><a class="anchor" href="https://github.com/RSweeten01" > <i style="font-size: 25px;" class="fab fa-github-square"></i> RSweeten01.  </a> </p></div>
+      <div class="col-md-4 themed-grid-col"><p><a class="anchor" href="https://www.linkedin.com/in/robert-sweeten-b68020b0/" > <i style="font-size: 25px;" class="fab fa-linkedin"></i> RSweeten01.  </a> </p></div>
     </div> 
-
- </div>
-</body>
-  
+     
+    <!-- End Projects grid -->
+    </div>
 
     
   <!-- End Portfolio Section -->
